@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-players',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./players.component.scss']
 })
 export class PlayersComponent {
+
+  players$: Observable<any> | undefined;
+
 
 }
