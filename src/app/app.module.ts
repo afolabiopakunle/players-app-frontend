@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PlayersModule } from './players/players.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { PlayersModule } from './players/players.module';
   ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
         PlayersModule,
     ],
